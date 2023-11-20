@@ -1,0 +1,52 @@
+@import url("styles/header.css");
+@import url("styles/schedule.css");
+@import url("styles/navbar.css");
+@import url("styles/buttons.css");
+@import url("styles/footer.css");
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --black: #464646;
+    --gray: #a3a3a3;
+    --bright: #ECECEC;
+    --white: #fff;
+    --darker-white: #f9f9f9;
+    --orange: #FFB050;
+    --blue: #4894FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:any-link {
+    text-decoration: none;
+}
+
+body {
+    margin-left: 100px;
+    font-family: var(--main-font);
+    background: var(--darker-white);
+    line-height: 160%;
+    padding: 7px;
+    color: var(--black);
+}
+
+.line__space {
+    margin: 10px 0;
+    background: var(--black);
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+    .left__pading{
+        padding-left: 10vw;
+    }
+}

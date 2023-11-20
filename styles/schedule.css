@@ -1,0 +1,155 @@
+.retangle {
+    background: var(--white);
+    margin: 20px 0;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.data__name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.appointment__container {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+}
+
+.appointment__user {
+    margin-top: 3em;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 1em;
+}
+
+.appointment__img {
+    margin-left: .5em;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    
+}
+
+.appointment__div {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.appointment__name {
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+.appointment__subtext {
+    background-image: url("../img/Camera.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 2em;
+}
+
+.local {
+    background-image: url("../img/pin.svg");
+}
+
+.appointment__contact {
+    padding: 0 16px;
+}
+
+.hour {
+    font-size: 14px;
+
+}
+
+.botton__flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.botton {
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+    padding: 13px;
+    border: 1px solid var(--bright);
+    border-radius: 8px;
+}
+
+.orange {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.blue {
+    width: 50%;
+    background: var(--blue);
+    color: var(--white);
+}
+
+@media screen and (min-width:1024px) {
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .retangle {
+        margin: 20px auto 20px 0;
+        width: 80vh;
+    }
+    .appointment__container {
+        margin: 0 auto;
+        width: 50vh;
+    }
+
+    .data__name {
+        font-size: 18px;
+    }
+
+    .appointment__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .appointment__name {
+        font-size: 18px;
+    }
+    
+    .appointment__subtext{
+        font-size: 16px;
+    }
+
+    .appointment__icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hour {
+        font-size: 16px;
+    }
+
+    .botton {
+        font-size: 16px;
+    }
+
+    .blue {
+        width: 50%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
